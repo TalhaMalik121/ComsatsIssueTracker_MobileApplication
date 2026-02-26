@@ -1,4 +1,4 @@
-name: comsatsissuetracker
+name: ComsatsIssueTracker
 description: "A new Flutter project."
 publish_to: 'none'
 
@@ -17,9 +17,18 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  # --- ADD THIS LINE BELOW ---
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
   assets:
     - assets/images/COMSATS_new_logo.jpg
 
+# This part stays exactly as you wrote it
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/COMSATS_new_logo.jpg"
+  adaptive_icon_background: "#F1F5F9"
+  adaptive_icon_foreground: "assets/images/COMSATS_new_logo.jpg"
